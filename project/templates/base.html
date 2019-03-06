@@ -1,0 +1,23 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Blog project</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">haeun</i></a>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="{% url 'home' %}">home</a></li>
+        <li class="tab"><a class="active" href="{% url 'new' %}">new</a></li>
+        <li class="tab"><a class="active" href="{% url 'portfolio' %}">fav</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+  {% block content %}
+  {% endblock %}
+  </div>
